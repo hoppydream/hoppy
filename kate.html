@@ -5,6 +5,10 @@
         .gwanak1 {
             display: none;
         }
+
+        #selectBoxSec {
+            visibility: hidden;
+        }
     </style>
 </head>
 
@@ -38,11 +42,17 @@
         <option value="junglang">중랑구</option>
     </select>
     <select value="업종" class="sector" id="selectBoxSec" name="selectBoxSec">
+        <option value="all3" selected="selected">전체</option>
         <option value="korea_food">한식</option>
+        <!--han-->
         <option value="china_food">중식</option>
+        <!--jong-->
         <option value="japan_food">일식</option>
+        <!--il-->
         <option value="bunsic">분식</option>
+        <!--bun-->
         <option value="dessert">제과점</option>
+        <!--dess-->
     </select>
     <table class="grid">
         <thead>
@@ -64,49 +74,49 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="gwanak1, han">
+            <tr class="gwanak1 han">
                 <td>한솥도시락 신림신성초교점</td>
                 <td>관악구</td>
                 <td>신림로 108</td>
                 <td>한식</td>
                 <td>010-3951-9002</td>
             </tr>
-            <tr class="gwanak1, han">
+            <tr class="gwanak1 han">
                 <td>소담한</td>
                 <td>관악구</td>
                 <td>신림로23길 16</td>
                 <td>한식</td>
                 <td>02-883-6991</td>
             </tr>
-            <tr class="gwanak1, han">
+            <tr class="gwanak1 han">
                 <td>자연고시식당</td>
                 <td>관악구</td>
                 <td>신림로 107</td>
                 <td>한식</td>
                 <td>070-8719-4097</td>
             </tr>
-            <tr class="gwanak1, han">
+            <tr class="gwanak1 han">
                 <td>한솥도시락</td>
                 <td>관악구</td>
                 <td>호암로24길 77</td>
                 <td>한식</td>
                 <td>886-9949</td>
             </tr>
-            <tr class="gwanak1, dess">
+            <tr class="gwanak1 dess">
                 <td>빵굼터</td>
                 <td>관악구</td>
                 <td>쑥고개로 84</td>
                 <td>제과점</td>
                 <td>877-6902</td>
             </tr>
-            <tr class="gwanak1, han">
+            <tr class="gwanak1 han">
                 <td>꿀벌식당</td>
                 <td>관악구</td>
                 <td>쑥고개로 52</td>
                 <td>한식</td>
                 <td>885-6877</td>
             </tr>
-            <tr class="gwanak1, jong">
+            <tr class="gwanak1 jong">
                 <td>황금짜장</td>
                 <td>관악구</td>
                 <td>장군봉1길 19</td>
@@ -344,7 +354,7 @@
                 <td class="tg-0lax">중식</td>
                 <td class="tg-0lax">02-990-0265</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">던킨도너츠</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>마들로 650 도봉월드상가 102-1호,2호</td>
@@ -365,21 +375,21 @@
                 <td class="tg-0lax">중식</td>
                 <td class="tg-0lax">02-3492-8080</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">뚜레쥬르</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로145길 55</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-956-9109</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">뚜레쥬르</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>덕릉로 239</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-993-6586</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">뚜레쥬르 창동SM마트점</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>덕릉로63가길 60</td>
@@ -484,7 +494,7 @@
                 <td class="tg-0lax">분식</td>
                 <td class="tg-0lax">02-956-7277</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">벧엘제과</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 112길 40</td>
@@ -512,14 +522,14 @@
                 <td class="tg-0lax">한식</td>
                 <td class="tg-0lax">956-9797</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">불란서제과</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>우이천로4길 31</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-904-1760</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">빵이야기</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로169길31,럭키아파트상가105호</td>
@@ -547,21 +557,21 @@
                 <td class="tg-0lax">중식</td>
                 <td class="tg-0lax">02-994-1144</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 yang">
                 <td class="tg-0lax">생생돈가스</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>방학로 174</td>
                 <td class="tg-0lax">양식</td>
                 <td class="tg-0lax">02-3494-5934</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">샹도르제과</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>노해로 70길 16</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-996-5931</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">서울뉴욕제과</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로153길 39</td>
@@ -582,7 +592,7 @@
                 <td class="tg-0lax">중식</td>
                 <td class="tg-0lax">02-954-8157</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 jong">
                 <td class="tg-0lax">송림각</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>방학로 223</td>
@@ -617,7 +627,7 @@
                 <td class="tg-0lax">한식</td>
                 <td class="tg-0lax">954-2019</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 il">
                 <td class="tg-0lax">왕돈까스</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도당로 27길 10</td>
@@ -666,7 +676,7 @@
                 <td class="tg-0lax">한식</td>
                 <td class="tg-0lax">954-5600</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 il">
                 <td class="tg-0lax">일락</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>삼양로538-6, 1층</td>
@@ -792,133 +802,133 @@
                 <td class="tg-0lax">중식</td>
                 <td class="tg-0lax">997-3395</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 150길 43</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">956-3060</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>해등로145,1층</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">993-8204</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>방학로174</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">955-0088</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>삼양로 582</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-991-1206</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 689</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-3494-0810</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>덕릉로66길 17(창4동 주공17단지 1층)</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-906-9392</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>노해로63길 79</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-902-1188</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 618</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-994-1732</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>시루봉로 220</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-3491-8245</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로110길 39-10(창동SM마트점)</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">999-8203</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>덕릉로 252-1</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-905-8033</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>우이천로4길 35</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-905-5545</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 891</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-904-2179</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>해등로 268 청구아파트 B상가 104동 105호</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-3491-7343</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>노해로 41길 26</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-907-6004</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>해등로 190</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-992-8204</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨 쌍문사거리점</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로517</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-902-8204</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게뜨 쌍문역점</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 473(쌍문동)</td>
                 <td class="tg-0lax">제과점</td>
                 <td class="tg-0lax">02-995-8205</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">파리바게트</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 767</td>
@@ -946,7 +956,7 @@
                 <td class="tg-0lax">한식</td>
                 <td class="tg-0lax">02-955-6336</td>
             </tr>
-            <tr class="dobong1">
+            <tr class="dobong1 dess">
                 <td class="tg-0lax">함스브로트과자점</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로 483</td>
@@ -974,7 +984,7 @@
                 <td class="tg-0lax">한식</td>
                 <td class="tg-0lax">954-2291</td>
             </tr>
-            <tr class="dobong1 han">
+            <tr class="dobong1  han">
                 <td class="tg-0lax">호가호식</td>
                 <td class="tg-0lax">도봉구</td>
                 <td>도봉로112길 26</td>
@@ -1030,35 +1040,74 @@
 
     <script>
         var state;
+        var where1 = new Array('all', 'gwanak', 'dobong');
+        var where2 = new Array('gwanak1', 'dobong1');
+        var where3 = new Array('all3', 'korea_food', 'china_food', 'japan_food', 'bunsic', 'dessert');
+        var where4 = new Array('han', 'jong', 'il', 'bun', 'dess');
+        for (var j = 0; j < where2.length; j++) {
+            jQuery('.' + where2[j]).show();
+        }
+        //----------------------------------------------------- 지역 선택
         jQuery('#selectBox').change(function () {
             state = jQuery('#selectBox option:selected').val();
-            if (state == 'gwanak') {
-                jQuery('.gwanak1').show();
-            } else {
-                jQuery('.gwanak1').hide();
-            }
-            if (state == 'dobong') {
-                jQuery('.dobong1').show();
-            } else {
-                jQuery('.dobong1').hide();
-            }
-            if (state == 'all') {
-                jQuery('.gwanak1, .dobong1').show();
-            }
-            jQuery('#selectBoxSec').change(function () {
-                var state1 = jQuery('#selectBoxSec option:selected').val();
 
-                if (state1 == 'all') {
-                    jQuery('.bun, .jong').show();
+            for (var i = 0; i < where2.length; i++) {
+                jQuery('.' + where2[i]).hide();
+            }
+            for (var i = 0; i < where1.length; i++) {
+                if (where1[0] == state) {//all
+                    $('#selectBoxSec').css("visibility", "hidden");
+                    for (var j = 0; j < where2.length; j++) {
+                        jQuery('.' + where2[j]).show();
+                    }
                 }
-                if (state1 == 'korea_food') {
-                    jQuery('.bun, .jong').hide();
-                    jQuery('.han').show();
-                } else {
-                    jQuery('.han').hide();
+                if (where1[i] == state) {//지역 선택
+                    $('#selectBoxSec').css("visibility", "visible");
+                    jQuery('.' + where2[i - 1]).show();
+                    //------------------------------------------------------업종 선택
+                    jQuery('#selectBoxSec').change(function () {
+                        var stateop = jQuery('#selectBoxSec option:selected').val();
+                        for (var a = 0; a < where4.length; a++) {
+                            jQuery('.' + where4[i]).hide();
+                        }//다 없애기
+                        for (var a = 0; a < where3.length; a++) {
+                            if (where3[0] == stateop) {//all
+                                $('#selectBoxSec').css("visibility", "hidden");
+                                for (var b = 0; b < where4.length; b++) {
+                                    jQuery('.' + where4[b]).show();
+                                }
+                            }
+                            if (where1[i] == state && where3[a] == stateop) {//선택
+                                for (var b = 0; b < where4.length; a++) {
+                                    jQuery('.' + where4[b]).hide();
+                                }
+                                jQuery('.' + where4[a - 1]).show();
+                            }
+                        }
+
+                    });
+
                 }
-            });
+            }
         });
+        /*jQuery('#selectBoxSec').change(function () {
+                        var stateop = jQuery('#selectBoxSec option:selected').val();
+                        for (var a = 0; a < where4.length; a++) {
+                            jQuery('.' + where4[i]).hide();
+                        }//다 없애기
+                        for (var a = 0; a < where3.length; a++) {
+                            if (where3[0] == stateop) {//all
+                                $('#selectBoxSec').css("visibility", "hidden");
+                                for (var b = 1; b < where3.length; b++) {
+                                    jQuery('.' + where4[b]).show();
+                                }
+                            }
+                            if (where3[a] == stateop) {//선택
+                                jQuery('.' + where4[a - 1]).show();
+                            }
+                        }
+
+                    });*/
     </script>
 </body>
 
