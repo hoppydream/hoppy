@@ -1,0 +1,255 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="main.html">
+            <div class="title">H<span id="cc">O</span>P<span id="cc">P</span>Y<span id="cc"> D</span>R<span
+                    id="cc">E</span>A<span id="cc">M</span></div>
+        </a>
+        <a href="#map"><button class="now menubtn">현황</button></a>
+        <a href="#kategory"><button class="kate menubtn">카테고리</button></a>
+        <a href="#"><button class="review menubtn">후기</button></a>
+
+    </div>
+    <br />
+    <div class="map" id="map"><br><br><br><br>
+        <div class="maintitle">현황</div>
+        <div class="subtitle">주변에 있는 가맹점 위치를 지도에서 확인해보세요!</div>
+        <iframe src="http://cyranoch.cafe24.com/piree/p770033/map_ka.php?bo_table=map" width="80%" height="75%"
+            class="mapframe" id="map-canvas"></iframe>
+    </div>
+    <div class="kategory" id="kategory">
+        <div class="maintitle">카테고리</div>
+        <div class="subtitle">지역과 업종을 선택하여 마음에 드는 가맹점을 찾아보세요!</div>
+
+        <!-- <select value="지역" class="country">
+            <option value=“gangnam”>강남구</option>
+            <option value=“gangdong”>강동구</option>
+            <option value=“gangbuk”>강북구</option>
+            <option value=“gangseo”>강서구</option>
+            <option value=“gwanak”>관악구</option>
+            <option value=“gwangjin”>광진구</option>
+            <option value=“guro”>구로구</option>
+            <option value=“gumchen”>금천구</option>
+            <option value=“nowon”>노원구</option>
+            <option value=“dobong”>도봉구</option>
+            <option value=“dongdaemun”>동대문구</option>
+            <option value=“dongjak”>동작구</option>
+            <option value=“mapo”>마포구</option>
+            <option value=“seodaemun”>서대문구</option>
+            <option value=“seocho”>서초구</option>
+            <option value=“seongdong”>성동구</option>
+            <option value=“seongbuk”>성북구</option>
+            <option value=“songpa”>송파구</option>
+            <option value=“yangcheon”>양천구</option>
+            <option value=“yeongdungpo”>영등포구</option>
+            <option value=“yongsan”>용산구</option>
+            <option value=“eonpyung”>은평구</option>
+            <option value=“jongro”>종로구</option>
+            <option value=“jung”>중구</option>
+            <option value=“junglang”>중랑구</option>
+        </select>
+        <select value="업종" class="sector">
+            <option value="china_food">중식</option>
+            <option value="korea_food">한식</option>
+            <option value="desert">제과점</option>
+        </select>-->
+        <table class="grid">
+            <thead>
+                <tr>
+                    <td index=0>가게 이름
+                        <div></div>
+                    </td>
+                    <td index=1 class="choose"><span style="color:white">지역</span>
+                        <div class="filter"></div>
+                    </td>
+                    <td index=2>상세주소
+                        <div></div>
+                    </td>
+                    <td index=3 class="choose"><span style="color:white">업종</span>
+                        <div class="filter"></div>
+                    </td>
+                    <td index=4>전화번호<div></div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>한솥도시락 신림신성초교점</td>
+                    <td>관악구</td>
+                    <td>신림로 108</td>
+                    <td>한식</td>
+                    <td>010-3951-9002</td>
+                </tr>
+                <tr>
+                    <td>소담한</td>
+                    <td>관악구</td>
+                    <td>신림로23길 16</td>
+                    <td>한식</td>
+                    <td>02-883-6991</td>
+                </tr>
+                <tr>
+                    <td>자연고시식당</td>
+                    <td>관악구</td>
+                    <td>신림로 107</td>
+                    <td>한식</td>
+                    <td>070-8719-4097</td>
+                </tr>
+                <tr>
+                    <td>한솥도시락</td>
+                    <td>관악구</td>
+                    <td>호암로24길 77</td>
+                    <td>한식</td>
+                    <td>886-9949</td>
+                </tr>
+                <tr>
+                    <td>빵굼터</td>
+                    <td>관악구</td>
+                    <td>쑥고개로 84</td>
+                    <td>제과점</td>
+                    <td>877-6902</td>
+                </tr>
+                <tr>
+                    <td>꿀벌식당</td>
+                    <td>관악구</td>
+                    <td>쑥고개로 52</td>
+                    <td>한식</td>
+                    <td>885-6877</td>
+                </tr>
+                <tr>
+                    <td>황금짜장</td>
+                    <td>관악구</td>
+                    <td>장군봉1길 19</td>
+                    <td>중식</td>
+                    <td>877-9444</td>
+                </tr>
+                <tr>
+                    <td>잘되는분식</td>
+                    <td>관악구</td>
+                    <td>장군봉1길 46</td>
+                    <td>한식</td>
+                    <td>887-7846</td>
+                </tr>
+                <tr>
+                    <td>봉이 돈까스&amp;불고기</td>
+                    <td>관악구</td>
+                    <td>남부순환로 1754</td>
+                    <td>한식</td>
+                    <td>877-7009</td>
+                </tr>
+                <tr>
+                    <td>한솥도시락</td>
+                    <td>관악구</td>
+                    <td>남부순환로 1870</td>
+                    <td>한식</td>
+                    <td>885-6303</td>
+                </tr>
+                <tr>
+                    <td>라티놀</td>
+                    <td>관악구</td>
+                    <td>관악로 154-5</td>
+                    <td>한식</td>
+                    <td>875-8285</td>
+                </tr>
+                <tr>
+                    <td>만다린</td>
+                    <td>관악구</td>
+                    <td>은천로 32</td>
+                    <td>중식</td>
+                    <td>879-2370</td>
+                </tr>
+                <tr>
+                    <td>푸드2900</td>
+                    <td>관악구</td>
+                    <td>은천로 37</td>
+                    <td>한식</td>
+                    <td>888-4805</td>
+                </tr>
+                <tr>
+                    <td>동희반점</td>
+                    <td>관악구</td>
+                    <td>신림로22길 24</td>
+                    <td>중식</td>
+                    <td>873-3338</td>
+                </tr>
+                <tr>
+                    <td>토마토김밥</td>
+                    <td>관악구</td>
+                    <td>인헌길 38</td>
+                    <td>한식</td>
+                    <td>872-0250</td>
+                </tr>
+                <tr>
+                    <td>김밥천국</td>
+                    <td>관악구</td>
+                    <td>난곡로 83</td>
+                    <td>한식</td>
+                    <td>852-2379</td>
+                </tr>
+                <tr>
+                    <td>옥이네</td>
+                    <td>관악구</td>
+                    <td>난향2길 8</td>
+                    <td>한식</td>
+                    <td>855-3585</td>
+                </tr>
+                <tr>
+                    <td>신왕짜장</td>
+                    <td>관악구</td>
+                    <td>난곡로 105</td>
+                    <td>중식</td>
+                    <td>839-9989</td>
+                </tr>
+                <tr>
+                    <td>김밥천국</td>
+                    <td>관악구</td>
+                    <td>난곡로24길 2</td>
+                    <td>한식</td>
+                    <td>859-7009</td>
+                </tr>
+                <tr>
+                    <td>자금성</td>
+                    <td>관악구</td>
+                    <td>난곡로31길 7</td>
+                    <td>중식</td>
+                    <td>864-1515</td>
+                </tr>
+                <tr>
+                    <td>김밥천국</td>
+                    <td>관악구</td>
+                    <td>호암로 534</td>
+                    <td>한식</td>
+                    <td>883-5655</td>
+                </tr>
+                <tr>
+                    <td>고시칼국수</td>
+                    <td>관악구</td>
+                    <td>신림로 18가길 42</td>
+                    <td>한식</td>
+                    <td>070-7803-0001</td>
+                </tr>
+                <tr>
+                    <td>동희반점</td>
+                    <td>관악구</td>
+                    <td>신림로22길 24</td>
+                    <td>중식</td>
+                    <td>873-3338</td>
+                </tr>
+            </tbody>
+            <script data-require="jquery@2.0.3" data-semver="2.0.3"
+                src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+            <script src="kategory.js"></script>
+        </table>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
