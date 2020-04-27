@@ -128,4 +128,15 @@ tr {
     visibility: hidden;
 }
 
+
+.pagination {
+    display: inline-flex;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.pagination-link {
+    margin-right: 5px;
+}
+
 /*-------------------------------------------*/

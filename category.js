@@ -8,6 +8,7 @@ for (var j = 0; j < where2.length; j++) {
 }
 //----------------------------------------------------- 지역 선택
 jQuery('#selectBox').change(function () {
+
     state = jQuery('#selectBox option:selected').val();
 
     for (var i = 0; i < where2.length; i++) {
@@ -61,6 +62,7 @@ jQuery('#selectBox').change(function () {
                                 $('.' + where2[b - 1]).css("display", "none");
                             }
                         }
+
                     }
 
                 }
@@ -69,4 +71,5 @@ jQuery('#selectBox').change(function () {
 
         }
     }
+
 });
