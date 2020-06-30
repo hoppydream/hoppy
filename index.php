@@ -69,7 +69,7 @@ $result = mysqli_query($conn,$sql);?>
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                 mapOption = { 
                     center: new kakao.maps.LatLng(37.471195, 126.937624), // 지도의 중심좌표
-                    level: 4 // 지도의 확대 레벨
+                    level: 3 // 지도의 확대 레벨
                 };
                 //-=============현재위치
                 if (navigator.geolocation) {
@@ -121,7 +121,7 @@ $result = mysqli_query($conn,$sql);?>
             //-=============현재위치
             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
             
-            var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
+            var imageSrc = 'https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png', // 마커이미지의 주소입니다    
                 imageSize = new kakao.maps.Size(55, 60), // 마커이미지의 크기입니다
                 imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
                   
@@ -135,102 +135,32 @@ $result = mysqli_query($conn,$sql);?>
                 var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
                 markerPosition2 = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
 
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); 
+                var markerImage3 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition3 = new kakao.maps.LatLng(37.470236, 126.937873); // 한솥도시락
 
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
+                var markerImage4 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition4 = new kakao.maps.LatLng(37.479220, 126.945747); // 빵굼터 
 
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624);
-
-                
+                var markerImage5 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition5 = new kakao.maps.LatLng(37.479470, 126.942290); // 꿀벌식당
 
             // 마커를 생성합니다
              // 마커이미지 설정
             var marker = new kakao.maps.Marker({position: markerPosition, image: markerImage });
             var marker1 = new kakao.maps.Marker({position: markerPosition1, image: markerImage1 });
             var marker2 = new kakao.maps.Marker({position: markerPosition2, image: markerImage2 });
+            var marker3 = new kakao.maps.Marker({position: markerPosition3, image: markerImage3 });
+            var marker4 = new kakao.maps.Marker({position: markerPosition4, image: markerImage4 });
+            var marker5 = new kakao.maps.Marker({position: markerPosition5, image: markerImage5 });
             
             // 마커가 지도 위에 표시되도록 설정합니다
             marker.setMap(map); 
             marker1.setMap(map);  
-            marker.setMap(map);  
+            marker2.setMap(map);
+            marker3.setMap(map);
+            marker4.setMap(map);
+            marker5.setMap(map);
+            
             </script>
             </div>
     </div>
