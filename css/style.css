@@ -150,6 +150,8 @@ td {}
 
 tr {}
 
+
+
 .filter {
     position: absolute;
     border: solid 1px;
@@ -167,17 +169,22 @@ tr {}
 
 /*-------------------------------------------*/
 .board {
-    width: 30%;
     border: 3px solid #deb34f;
     display: inline-block;
     border-radius: 30px;
     padding: 2vw;
     text-align: center;
-    margin-right: 1%;
-    position: relative;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1%;
 
+}
+
+.boardform {
+    border: 3px solid #6e9758;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 2vw;
+    text-align: center;
+    margin: 1%;
 }
 
 
@@ -240,10 +247,7 @@ tr {}
     display: none;
 }
 
-.boardform {
-    border: 3px solid #6e9758;
-    display: inline-block;
-}
+
 
 textarea {
     border: 1px solid #6e9758;

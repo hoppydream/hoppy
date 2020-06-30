@@ -8,6 +8,7 @@ $mysql_host = "localhost";
 
 $conn = mysqli_connect($mysql_host, $mysql_user,$mysql_passwd,$mysql_db);
 mysqli_set_charset($conn,"utf8");
+
 if(!$conn){
 	die("연결 실패 : ".mysqli_connect_error());
 }
@@ -29,9 +30,7 @@ $resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
 <head>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/category.css">
-<link rel="stylesheet" href="css/style.css">
 <!-- CSS only -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -50,7 +49,7 @@ $resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 	crossorigin="anonymous"></script>
-
+    
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -61,28 +60,77 @@ $resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
     .prev,
     .next {
         cursor: pointer;
-        /* position: absolute; */
-        /* top: 40%; */
-        width: auto;
-        padding: 16px;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 3px 3px 3px 3px;
-        user-select: none;
-        margin: auto 10% ;
+    /* position: absolute; */
+    /* top: 40%; */
+    width: auto;
+    /* padding: 16px; */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /* border-radius: 3px 3px 3px 3px; */
+    user-select: none;
+    margin: 0 10%;
+    display: inline-block;
     }
     .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.0);
     color: white;
 }
+.bootdiv .mySlides {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+a:not([href]) {
+    color: #6e9758;
+    text-decoration: none;
+}
 </style>
+<link rel="stylesheet" href="css/test.css">
 </head>
 
-<div class = "prevnext"style = "width : 100%;text-align : center;    margin-bottom: 15px;">
-    <a class="prev" style ="left:40%;"onclick="plusSlides(-1)">&#10094;</a> <a class="next"
-        onclick="plusSlides(1)" style ="right:40%;">&#10095;</a>
+<div class = "prevnext"style = "width : 100%;text-align : left; margin-bottom: 15px;">
+<form action = "categorytest.php"method = "post">
+    <select name="location" class="country">
+            <option value=""disabled selected>지역</option>
+            <option value="">전체</option>
+            <option value="강남구">강남구</option>
+            <option value="강동구">강동구</option>
+            <option value="강북구">강북구</option>
+            <option value="강서구">강서구</option>
+            <option value="관악구">관악구</option>
+            <option value="광진구">광진구</option>
+            <option value="구로구">구로구</option>
+            <option value="금천구">금천구</option>
+            <option value="노원구">노원구</option>
+            <option value="도봉구">도봉구</option>
+            <option value="동대문구">동대문구</option>
+            <option value="동작구">동작구</option>
+            <option value="마포구">마포구</option>
+            <option value="서대문구">서대문구</option>
+            <option value="서초구">서초구</option>
+            <option value="성동구">성동구</option>
+            <option value="성북구">성북구</option>
+            <option value="송파구">송파구</option>
+            <option value="양천구">양천구</option>
+            <option value="영등포구">영등포구</option>
+            <option value="용산구">용산구</option>
+            <option value="은평구">은평구</option>
+            <option value="종로구">종로구</option>
+            <option value="중구">중구</option>
+            <option value="중랑구">중랑구</option>
+    </select>
+    <select name="kind" class="sector" style = "margin-left : 4px;">
+        <option value=""disabled selected>업종</option>
+        <option value="">전체</option>
+        <option value="중식">중식</option>
+        <option value="한식">한식</option>
+        <option value="제과점">제과점</option>
+    </select>
+    <input type = "submit" value = "검색"class = "catebtn">
+</form>
+    <a class="prev" style ="margin-top: 7px;"onclick="plusSlides(-1)">&#10094;</a> <a class="next"
+        onclick="plusSlides(1)" style ="margin-top: 7px;">&#10095;</a>
         </div>
 <div class="cardcontainer">
     

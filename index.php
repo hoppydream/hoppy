@@ -44,13 +44,11 @@ $result = mysqli_query($conn,$sql);?>
 
 <body style="text-align : center;">
     <div class="menu">
-        <a href="main.html">
-        <a href="main.html">
+        <a href="index.php">
             <!-- <div class="title">H<span id="cc">O</span>P<span id="cc">P</span>Y<span id="cc"> D</span>R<span
                 id="cc">E</span>A<span id="cc">M</span></div> -->
             <img src="img/logo.png"style = "width: 15%;
     margin: 1% auto;">
-        </a>
         </a>
         <a href="#map"><button class="now menubtn">현황</button></a>
         <a href="#kategory"><button class="kate menubtn">카테고리</button></a>
@@ -73,7 +71,54 @@ $result = mysqli_query($conn,$sql);?>
                     center: new kakao.maps.LatLng(37.471195, 126.937624), // 지도의 중심좌표
                     level: 4 // 지도의 확대 레벨
                 };
-            
+                //-=============현재위치
+                if (navigator.geolocation) {
+                    
+                    // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        
+                        var lat = position.coords.latitude, // 위도
+                            lon = position.coords.longitude; // 경도
+                        
+                        var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+                        
+                        // 마커와 인포윈도우를 표시합니다
+                        displayMarker(locPosition, message);
+                            
+                    });
+                    
+                } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+                    
+                    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+                        message = '현재 위치를 알 수 없습니다..'
+                        
+                    displayMarker(locPosition, message);
+                }
+                function displayMarker(locPosition, message) {
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({  
+                    map: map, 
+                    position: locPosition
+                }); 
+
+                var iwContent = message, // 인포윈도우에 표시할 내용
+                    iwRemoveable = true;
+
+                // 인포윈도우를 생성합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content : iwContent,
+                    removable : iwRemoveable
+                });
+
+                // 인포윈도우를 마커위에 표시합니다 
+                infowindow.open(map, marker);
+
+                // 지도 중심좌표를 접속위치로 변경합니다
+                map.setCenter(locPosition);      
+                }   
+            //-=============현재위치
             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
             
             var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
@@ -84,11 +129,11 @@ $result = mysqli_query($conn,$sql);?>
             var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
                 markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); // 한솥도시락 신림신성초교점
 
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
+                var markerImage1 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition1 = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
 
-                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
+                var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition2 = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
 
                 var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
                 markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); 
@@ -177,13 +222,15 @@ $result = mysqli_query($conn,$sql);?>
                 
 
             // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-                position: markerPosition, 
-                image: markerImage // 마커이미지 설정 
-            });
+             // 마커이미지 설정
+            var marker = new kakao.maps.Marker({position: markerPosition, image: markerImage });
+            var marker1 = new kakao.maps.Marker({position: markerPosition1, image: markerImage1 });
+            var marker2 = new kakao.maps.Marker({position: markerPosition2, image: markerImage2 });
             
             // 마커가 지도 위에 표시되도록 설정합니다
-            marker.setMap(map);  
+            marker.setMap(map); 
+            marker1.setMap(map);  
+            marker2.setMap(map);  
             </script>
             </div>
     </div>

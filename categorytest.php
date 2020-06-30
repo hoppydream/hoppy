@@ -30,9 +30,7 @@ $resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
 <head>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/category.css">
-<link rel="stylesheet" href="css/style.css">
 <!-- CSS only -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -51,7 +49,7 @@ $resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 	crossorigin="anonymous"></script>
-
+    
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <style>

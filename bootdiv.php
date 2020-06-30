@@ -71,8 +71,8 @@ $result = mysqli_query($conn,$sql);
 <div class="bootdiv">
 <div class="slideshow-container">
 
-<div class="mySlides fade" >
-    <div class="board col-lg-3 col-md-4 boardform">
+<div class="mySlides fade" style="text-align: center;">
+    <div class="col-lg-3 col-md-4 boardform">
 
         <span class="revtit">여러분의 솔직한 후기를 들려주세요!</span><br>
         <form action="board_write.php" method="post"enctype='multipart/form-data'>
@@ -127,7 +127,6 @@ $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0){
             while($row=mysqli_fetch_array($result)){ ?>
                 <div class="board col-lg-3 col-md-4">
-                <span class="date"><?= $row['date2']?></span>
                     <table>
                         <tr>
                             <td rowspan="3" class="reviewimg"><img
@@ -161,6 +160,8 @@ $result = mysqli_query($conn,$sql);
                             <td class="reviewreview" colspan = "2"><?=$row['review']?></td>
                         </tr>
                     </table>
+                <span class="date"><?= $row['date2']?></span>
+
                 </div>
                 
                 
@@ -168,8 +169,8 @@ $result = mysqli_query($conn,$sql);
                 $cntcnt+=1;
                 if($cntcnt==5){?>
                     </div>
-                    <div class="mySlides fade">
-                        <div class="board col-lg-3 col-md-4 boardform">
+                    <div class="mySlides fade"style="text-align: center;">
+                        <div class="col-lg-3 col-md-4 boardform">
 
                             <span class="revtit">여러분의 솔직한 후기를 들려주세요!</span><br>
                             <form action="board_write.php" method="post">
