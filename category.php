@@ -123,9 +123,13 @@ a:not([href]) {
     <select name="kind" class="sector" style = "margin-left : 4px;">
         <option value=""disabled selected>업종</option>
         <option value="">전체</option>
-        <option value="중식">중식</option>
         <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
         <option value="제과점">제과점</option>
+        <option value="도시락">도시락</option>
+        <option value="기타">기타</option>
     </select>
     <input type = "submit" value = "검색"class = "catebtn">
 </form>

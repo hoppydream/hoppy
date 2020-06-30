@@ -230,7 +230,7 @@ $result = mysqli_query($conn,$sql);?>
             // 마커가 지도 위에 표시되도록 설정합니다
             marker.setMap(map); 
             marker1.setMap(map);  
-            marker2.setMap(map);  
+            marker.setMap(map);  
             </script>
             </div>
     </div>
