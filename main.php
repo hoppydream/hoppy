@@ -25,26 +25,32 @@
         <div class="subtitle">주변에 있는 가맹점 위치를 지도에서 확인해보세요!</div>
         <!-- <iframe src="//cyranoch.cafe24.com/piree/p770033/map_ka.php?bo_table=map" width="80%" height="75%"
             class="mapframe" id="map-canvas"></iframe> -->
-            <div id="map" style="width:100%;height:400px;"></div> <!-- 다른 이미지로 마커 생성하기 -->
+            <div id="map" style="width:100%;height:300px;"></div> <!-- 다른 이미지로 마커 생성하기 -->
             
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e38c15b1993e4d2bd6c705b65a34c6fd"></script>
             <script>
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                 mapOption = { 
-                    center: new kakao.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+                    center: new kakao.maps.LatLng(37.471195, 126.937624), // 지도의 중심좌표
                     level: 4 // 지도의 확대 레벨
                 };
             
             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
             
             var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
-                imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+                imageSize = new kakao.maps.Size(55, 60), // 마커이미지의 크기입니다
                 imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
                   
             // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
             var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
-            
+                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); // 한솥도시락 신림신성초교점
+
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
+
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                markerPosition = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
+
             // 마커를 생성합니다
             var marker = new kakao.maps.Marker({
                 position: markerPosition, 
