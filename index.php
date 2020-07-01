@@ -71,7 +71,7 @@ $result = mysqli_query($conn,$sql);?>
                     center: new kakao.maps.LatLng(37.471195, 126.937624), // 지도의 중심좌표
                     level: 3 // 지도의 확대 레벨
                 };
-                //-=============현재위치
+                //================================================================== 현재위치
                 if (navigator.geolocation) {
                     
                     // GeoLocation을 이용해서 접속 위치를 얻어옵니다
@@ -118,48 +118,98 @@ $result = mysqli_query($conn,$sql);?>
                 // 지도 중심좌표를 접속위치로 변경합니다
                 map.setCenter(locPosition);      
                 }   
-            //-=============현재위치
+            //======================================================================= 현재위치
             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
             
-            var imageSrc = 'https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png', // 마커이미지의 주소입니다    
-                imageSize = new kakao.maps.Size(25, 35), // 마커이미지의 크기입니다
-                imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-                  
-            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); // 한솥도시락 신림신성초교점
+            // 보류=========================================================================================================================
+            // var imageSrc = 'https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png', // 마커이미지의 주소입니다    
+            //     imageSize = new kakao.maps.Size(25, 35), // 마커이미지의 크기입니다
+            //     imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
-                var markerImage1 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition1 = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
+            // 마커를 표시할 위치와 title 객체 배열입니다 
+            var positions = [
+                {
+                    title: '한솥도시락', 
+                    latlng: new kakao.maps.LatLng(37.471195, 126.937624)
+                },
+                {
+                    title: '소담한', 
+                    latlng: new kakao.maps.LatLng(37.465760, 126.938128)
+                },
+                {
+                    title: '자연고시식당', 
+                    latlng: new kakao.maps.LatLng(37.470723, 126.937439)
+                },
+                {
+                    title: '한솥도시락',
+                    latlng: new kakao.maps.LatLng(37.470236, 126.937873)
+                },
+                {
+                    title: '빵굼터', 
+                    latlng: new kakao.maps.LatLng(37.479220, 126.945747)
+                },
+                {
+                    title: '꿀벌식당', 
+                    latlng: new kakao.maps.LatLng(37.479470, 126.942290)
+                },
+            ];
 
-                var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition2 = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
-
-                var markerImage3 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition3 = new kakao.maps.LatLng(37.470236, 126.937873); // 한솥도시락
-
-                var markerImage4 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition4 = new kakao.maps.LatLng(37.479220, 126.945747); // 빵굼터 
-
-                var markerImage5 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                markerPosition5 = new kakao.maps.LatLng(37.479470, 126.942290); // 꿀벌식당
-
+            // 마커 이미지의 이미지 주소입니다
+            var imageSrc = "https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png"; 
+    
+            for (var i = 0; i < positions.length; i ++) {
+        
+            // 마커 이미지의 이미지 크기 입니다
+            var imageSize = new kakao.maps.Size(24, 35); 
+        
+            // 마커 이미지를 생성합니다    
+            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+        
             // 마커를 생성합니다
-             // 마커이미지 설정
-            var marker = new kakao.maps.Marker({position: markerPosition, image: markerImage });
-            var marker1 = new kakao.maps.Marker({position: markerPosition1, image: markerImage1 });
-            var marker2 = new kakao.maps.Marker({position: markerPosition2, image: markerImage2 });
-            var marker3 = new kakao.maps.Marker({position: markerPosition3, image: markerImage3 });
-            var marker4 = new kakao.maps.Marker({position: markerPosition4, image: markerImage4 });
-            var marker5 = new kakao.maps.Marker({position: markerPosition5, image: markerImage5 });
+            var marker = new kakao.maps.Marker({
+                map: map, // 마커를 표시할 지도
+                position: positions[i].latlng, // 마커를 표시할 위치
+                title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                image : markerImage // 마커 이미지 
+            });
+        }
+
+            // 보류==================================================================================================================
+            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+            // var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); // 한솥도시락 신림신성초교점
+
+            //     var markerImage1 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition1 = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
+
+            //     var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition2 = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
+
+            //     var markerImage3 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition3 = new kakao.maps.LatLng(37.470236, 126.937873); // 한솥도시락
+
+            //     var markerImage4 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition4 = new kakao.maps.LatLng(37.479220, 126.945747); // 빵굼터 
+
+            //     var markerImage5 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            //     markerPosition5 = new kakao.maps.LatLng(37.479470, 126.942290); // 꿀벌식당
+
+            // // 마커를 생성합니다
+            //  // 마커이미지 설정
+            // var marker = new kakao.maps.Marker({position: markerPosition, image: markerImage });
+            // var marker1 = new kakao.maps.Marker({position: markerPosition1, image: markerImage1 });
+            // var marker2 = new kakao.maps.Marker({position: markerPosition2, image: markerImage2 });
+            // var marker3 = new kakao.maps.Marker({position: markerPosition3, image: markerImage3 });
+            // var marker4 = new kakao.maps.Marker({position: markerPosition4, image: markerImage4 });
+            // var marker5 = new kakao.maps.Marker({position: markerPosition5, image: markerImage5 });
             
-            // 마커가 지도 위에 표시되도록 설정합니다
-            marker.setMap(map); 
-            marker1.setMap(map);  
-            marker2.setMap(map);
-            marker3.setMap(map);
-            marker4.setMap(map);
-            marker5.setMap(map);
+            // // 마커가 지도 위에 표시되도록 설정합니다
+            // marker.setMap(map); 
+            // marker1.setMap(map);  
+            // marker2.setMap(map);
+            // marker3.setMap(map);
+            // marker4.setMap(map);
+            // marker5.setMap(map);
             
             </script>
             </div>
