@@ -81,7 +81,7 @@ $result = mysqli_query($conn,$sql);?>
                             lon = position.coords.longitude; // 경도
                         
                         var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+                            message = '<div style="padding:5px;">현재 나의 위치!?</div>'; // 인포윈도우에 표시될 내용입니다
                         
                         // 마커와 인포윈도우를 표시합니다
                         displayMarker(locPosition, message);
@@ -370,6 +370,34 @@ $result = mysqli_query($conn,$sql);?>
                 {
                     title: '김재성 교동짬뽕', 
                     latlng: new kakao.maps.LatLng(37.5407825,127.129763 )
+                },
+                {
+                    title: '꼬꼬스토리', 
+                    latlng: new kakao.maps.LatLng(37.6233975,127.029656 )
+                },
+                {
+                    title: '꼬망 도시락카페', 
+                    latlng: new kakao.maps.LatLng(37.5067483,127.083142 )
+                },
+                {
+                    title: '꼬모도 도시락카페', 
+                    latlng: new kakao.maps.LatLng(37.5017186,127.097963 )
+                },
+                {
+                    title: '꽃돼지 수제 돈까스', 
+                    latlng: new kakao.maps.LatLng(37.6178947,127.082969 )
+                },
+                {
+                    title: '꾸스꾸스', 
+                    latlng: new kakao.maps.LatLng(37.5778432,126.971134 )
+                },
+                {
+                    title: '꿀맛분식', 
+                    latlng: new kakao.maps.LatLng(37.6210985,126.914548 )
+                },
+                {
+                    title: '꿀벌식당', 
+                    latlng: new kakao.maps.LatLng(37.4794795,126.942287 )
                 }
             ];
             // 마커 이미지의 이미지 주소입니다
