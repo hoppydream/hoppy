@@ -69,8 +69,9 @@ $result = mysqli_query($conn,$sql);?>
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                 mapOption = { 
                     center: new kakao.maps.LatLng(37.471195, 126.937624), // 지도의 중심좌표
-                    level: 3 // 지도의 확대 레벨
+                    level: 5 // 지도의 확대 레벨
                 };
+
                 //================================================================== 현재위치
                 if (navigator.geolocation) {
                     
@@ -117,15 +118,11 @@ $result = mysqli_query($conn,$sql);?>
 
                 // 지도 중심좌표를 접속위치로 변경합니다
                 map.setCenter(locPosition);      
-                }   
-            //======================================================================= 현재위치
-            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-            
-            // 보류=========================================================================================================================
-            // var imageSrc = 'https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png', // 마커이미지의 주소입니다    
-            //     imageSize = new kakao.maps.Size(25, 35), // 마커이미지의 크기입니다
-            //     imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+                }
+                //================================================================== 현재위치
 
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        
             // 마커를 표시할 위치와 title 객체 배열입니다 
             var positions = [
                 {
@@ -149,9 +146,93 @@ $result = mysqli_query($conn,$sql);?>
                     latlng: new kakao.maps.LatLng(37.479220, 126.945747)
                 },
                 {
-                    title: '꿀벌식당', 
-                    latlng: new kakao.maps.LatLng(37.479470, 126.942290)
+                    title: '황금짜장', 
+                    latlng: new kakao.maps.LatLng(37.482020, 126.941204)
                 },
+                {
+                    title: '잘되는분식', 
+                    latlng: new kakao.maps.LatLng(37.481595, 126.942493)
+                },
+                {
+                    title: '봉이돈까스 & 불고기', 
+                    latlng: new kakao.maps.LatLng(37.482610, 126.944953)
+                },
+                {
+                    title: '한솥도시락', 
+                    latlng: new kakao.maps.LatLng(37.479247, 126.957277)
+                },
+                {
+                    title: '라티놀', 
+                    latlng: new kakao.maps.LatLng(37.478939, 126.952814)
+                },
+                {
+                    title: '만다린', 
+                    latlng: new kakao.maps.LatLng(37.479410, 126.953582)
+                },
+                {
+                    title: '푸드2900', 
+                    latlng: new kakao.maps.LatLng(37.486441, 126.939552)
+                },
+                {
+                    title: '동희반점', 
+                    latlng: new kakao.maps.LatLng(37.472380, 126.935672)
+                },
+                {
+                    title: '토마토김밥', 
+                    latlng: new kakao.maps.LatLng(37.473802, 126.966600)
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.462798, 126.918728)
+                },
+                {
+                    title: '옥이네', 
+                    latlng: new kakao.maps.LatLng(37.463402, 126.917979)
+                },
+                {
+                    title: '신왕짜장', 
+                    latlng: new kakao.maps.LatLng(37.465043, 126.919097)
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.469773, 126.920284)
+                },
+                {
+                    title: '자금성', 
+                    latlng: new kakao.maps.LatLng(37.471308, 126.919275)
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.465246, 126.931632)
+                },
+                {
+                    title: '고시칼국수', 
+                    latlng: new kakao.maps.LatLng(37.472431, 126.934321)
+                },
+                {
+                    title: '153컵밥', 
+                    latlng: new kakao.maps.LatLng(37.642186, 127.037611)
+                },
+                {
+                    title: '감탄쌍문점', 
+                    latlng: new kakao.maps.LatLng(37.658273, 127.034856)
+                },
+                {
+                    title: '공릉동멸치국수', 
+                    latlng: new kakao.maps.LatLng(37.620178, 127.072952)
+                },
+                {
+                    title: '광천집', 
+                    latlng: new kakao.maps.LatLng(37.647450, 127.034393)
+                },
+                {
+                    title: '구풍원', 
+                    latlng: new kakao.maps.LatLng(37.633906, 127.040783)
+                },
+                {
+                    title: '김가네국수집', 
+                    latlng: new kakao.maps.LatLng(37.472380, 126.935672)
+                }
             ];
 
             // 마커 이미지의 이미지 주소입니다
@@ -173,46 +254,8 @@ $result = mysqli_query($conn,$sql);?>
                 image : markerImage // 마커 이미지 
             });
         }
-
-            // 보류==================================================================================================================
-            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-            // var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition = new kakao.maps.LatLng(37.471195, 126.937624); // 한솥도시락 신림신성초교점
-
-            //     var markerImage1 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition1 = new kakao.maps.LatLng(37.465760, 126.938128); // 소담한
-
-            //     var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition2 = new kakao.maps.LatLng(37.470723, 126.937439); // 자연고시식당
-
-            //     var markerImage3 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition3 = new kakao.maps.LatLng(37.470236, 126.937873); // 한솥도시락
-
-            //     var markerImage4 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition4 = new kakao.maps.LatLng(37.479220, 126.945747); // 빵굼터 
-
-            //     var markerImage5 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            //     markerPosition5 = new kakao.maps.LatLng(37.479470, 126.942290); // 꿀벌식당
-
-            // // 마커를 생성합니다
-            //  // 마커이미지 설정
-            // var marker = new kakao.maps.Marker({position: markerPosition, image: markerImage });
-            // var marker1 = new kakao.maps.Marker({position: markerPosition1, image: markerImage1 });
-            // var marker2 = new kakao.maps.Marker({position: markerPosition2, image: markerImage2 });
-            // var marker3 = new kakao.maps.Marker({position: markerPosition3, image: markerImage3 });
-            // var marker4 = new kakao.maps.Marker({position: markerPosition4, image: markerImage4 });
-            // var marker5 = new kakao.maps.Marker({position: markerPosition5, image: markerImage5 });
-            
-            // // 마커가 지도 위에 표시되도록 설정합니다
-            // marker.setMap(map); 
-            // marker1.setMap(map);  
-            // marker2.setMap(map);
-            // marker3.setMap(map);
-            // marker4.setMap(map);
-            // marker5.setMap(map);
-            
-            </script>
-            </div>
+        </script>
+        </div>
     </div>
     <div class="kategory" id="kategory">
         <div class="maintitle">카테고리</div>
