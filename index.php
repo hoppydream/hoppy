@@ -192,10 +192,6 @@ $result = mysqli_query($conn,$sql);?>
                     latlng: new kakao.maps.LatLng(37.4988126,127.146620 )
                 },
                 {
-                    title: '구풍원', 
-                    latlng: new kakao.maps.LatLng(37.6339268,127.040785 )
-                },
-                {
                     title: '국물명가24시전주콩나물국밥', 
                     latlng: new kakao.maps.LatLng(37.6582824,127.074072 )
                 },
@@ -224,36 +220,8 @@ $result = mysqli_query($conn,$sql);?>
                     latlng: new kakao.maps.LatLng(37.6024757,126.915317 )
                 },
                 {
-                    title: '김밥천국', 
-                    latlng: new kakao.maps.LatLng(37.469773, 126.920284)
-                },
-                {
                     title: '자금성', 
                     latlng: new kakao.maps.LatLng(37.471308, 126.919275)
-                },
-                {
-                    title: '김밥천국', 
-                    latlng: new kakao.maps.LatLng(37.465246, 126.931632)
-                },
-                {
-                    title: '고시칼국수', 
-                    latlng: new kakao.maps.LatLng(37.472431, 126.934321)
-                },
-                {
-                    title: '153컵밥', 
-                    latlng: new kakao.maps.LatLng(37.642186, 127.037611)
-                },
-                {
-                    title: '감탄쌍문점', 
-                    latlng: new kakao.maps.LatLng(37.658273, 127.034856)
-                },
-                {
-                    title: '공릉동멸치국수', 
-                    latlng: new kakao.maps.LatLng(37.620178, 127.072952)
-                },
-                {
-                    title: '광천집', 
-                    latlng: new kakao.maps.LatLng(37.647450, 127.034393)
                 },
                 {
                     title: '구풍원', 
@@ -294,10 +262,6 @@ $result = mysqli_query($conn,$sql);?>
                 {
                     title: '토마토김밥', 
                     latlng: new kakao.maps.LatLng(37.473802, 126.966600)
-                },
-                {
-                    title: '김밥천국', 
-                    latlng: new kakao.maps.LatLng(37.462798, 126.918728)
                 },
                 {
                     title: '옥이네', 
