@@ -346,6 +346,30 @@ $result = mysqli_query($conn,$sql);?>
                 {
                     title: '김밥천국', 
                     latlng: new kakao.maps.LatLng(37.4628328,126.918722 )
+                },
+                {
+                    title: '김밥천국 명지전문대점', 
+                    latlng: new kakao.maps.LatLng(37.5845432,126.924169 )
+                },
+                {
+                    title: '김밥천국 이대역점', 
+                    latlng: new kakao.maps.LatLng(37.5571839,126.947081 )
+                },
+                {
+                    title: '김밥하우스', 
+                    latlng: new kakao.maps.LatLng(37.6335757,127.039936 )
+                },
+                {
+                    title: '김밥하우스', 
+                    latlng: new kakao.maps.LatLng(37.5963868,126.948966 )
+                },
+                {
+                    title: '김용현베이커리', 
+                    latlng: new kakao.maps.LatLng(37.5779694,126.971530 )
+                },
+                {
+                    title: '김재성 교동짬뽕', 
+                    latlng: new kakao.maps.LatLng(37.5407825,127.129763 )
                 }
             ];
             // 마커 이미지의 이미지 주소입니다
