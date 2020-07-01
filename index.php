@@ -274,6 +274,78 @@ $result = mysqli_query($conn,$sql);?>
                 {
                     title: '황금짜장', 
                     latlng: new kakao.maps.LatLng(37.482020, 126.941204)
+                },
+                {
+                    title: '김밥&라면', 
+                    latlng: new kakao.maps.LatLng(37.5341048,126.957778 )
+                },
+                {
+                    title: '김밥사랑', 
+                    latlng: new kakao.maps.LatLng(37.5876451,126.944387 )
+                },
+                {
+                    title: '김밥세상', 
+                    latlng: new kakao.maps.LatLng(37.5782167,126.909391 )
+                },
+                {
+                    title: '김밥옆구리', 
+                    latlng: new kakao.maps.LatLng(37.4971326,126.930320 )
+                },
+                {
+                    title: '김밥이랑', 
+                    latlng: new kakao.maps.LatLng(37.6548487,127.036932 )
+                },
+                {
+                    title: '김밥천국',//=============================== 
+                    latlng: new kakao.maps.LatLng(37.5681859,126.931736 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.4652649,126.931650 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.5796690,126.924389 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.6651024,127.034931 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.5890871,126.945280 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.4988870,126.901866 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.4697987,126.920285 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.5965217,126.948547 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.5937814,126.945684 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.4936945,126.898661 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.6647307,127.042094 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.5162183,127.014719 )
+                },
+                {
+                    title: '김밥천국', 
+                    latlng: new kakao.maps.LatLng(37.4628328,126.918722 )
                 }
             ];
             // 마커 이미지의 이미지 주소입니다
