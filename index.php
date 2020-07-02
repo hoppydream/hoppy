@@ -19,6 +19,8 @@ $result = mysqli_query($conn,$sql);?>
 <html>
 
 <head>
+<title>HOPPY DREAM</title>
+
     <meta charset="UTF-8">
     
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -38,6 +40,7 @@ $result = mysqli_query($conn,$sql);?>
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
+<link rel="shortcut icon" href="img/favicon.ico">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
