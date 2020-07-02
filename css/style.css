@@ -197,13 +197,13 @@ tr {}
 .board .date {
     float: right;
     border: none;
-    margin-bottom: 2vh;
+    /* margin-bottom: 2vh; */
     background-color: rgba(255, 255, 255, 1.0);
     font-size: 14px;
     margin-top: 1vw;
-    position: absolute;
-    bottom: 1vw;
-    right: 2vw;
+    position: relative;
+    /* bottom: 1vw; */
+    right: 1vw;
     color: #aaaaaa;
 }
 
@@ -229,6 +229,7 @@ tr {}
 .board .reviewloc {
     font-size: 12px;
     text-align: left;
+    padding-left: 5%;
 }
 
 .board .reviewtitle {

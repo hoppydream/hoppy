@@ -11,6 +11,8 @@
     if(!$conn){
         die("연결 실패 : ".mysqli_connect_error());
     }
+    
+mysqli_query ($conn, 'SET NAMES utf8'); 
 ?><script> console.log('연결성공')</script>
 <?php
 
@@ -116,7 +118,7 @@ $result = mysqli_query($conn,$sql);
                 <a href="#">★</a>
             </p>
             
-            <input type = "text"name = "score" class = "inputhidden"id = "score"style = "visibility: hidden;">
+            <input type = "text"value = "0"name = "score" class = "inputhidden"id = "score"style = "visibility: hidden;">
 
             <input type="submit">
         </form>
@@ -130,14 +132,14 @@ $result = mysqli_query($conn,$sql);
                     <table>
                         <tr>
                             <td rowspan="3" class="reviewimg"><img
-                            src=<?= '"data:image/jpeg;base64,'.base64_encode($row['img']).'"';?>
+                            src="<?=$row['img']?>"
                             class="img-fluid imageFluid" ></td>
                             <td class="reviewloc"><?=$row['loc']?></td>
                          </tr><tr>
                             <td class="reviewtitle"><?=$row['title']?></td>
                         </tr>
                         <tr>
-                            <td class="reviewscore"style = "display: flex;"><?=$row['starscore']?>&nbsp;
+                            <td class="reviewscore"style = "display: flex;padding-left: 5%;"><?=$row['starscore']?>&nbsp;
                                 <p id="star_grade1">
                                     <?php 
                                     $one = 1;
@@ -173,7 +175,7 @@ $result = mysqli_query($conn,$sql);
                         <div class="col-lg-3 col-md-4 boardform">
 
                             <span class="revtit">여러분의 솔직한 후기를 들려주세요!</span><br>
-                            <form action="board_write.php" method="post">
+                            <form action="board_write.php" method="post"enctype="multipart/form-data" >
                                 <div class = "rccon"><select name="loc" class="reviewcountry">
                                     <option value="강남구">강남구</option>
                                     <option value="강동구">강동구</option>
@@ -214,7 +216,7 @@ $result = mysqli_query($conn,$sql);
                                     <a href="#">★</a>
                                 </p>
                                 
-                                <input type = "text"name = "score" class = "inputhidden"id = "score"style = "visibility: hidden;">
+                                <input type = "text"value = "0"name = "score" class = "inputhidden"id = "score"style = "visibility: hidden;">
 
                                 <input type="submit">
                             </form>

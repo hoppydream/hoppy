@@ -26,7 +26,7 @@ if($get_kind==NULL){
 }
 $sql = "SELECT * FROM info WHERE address like('$get_location%%') and kind like('$get_kind%%')";
 $result = $conn->query($sql);
-$resultloc = $conn->query("SELECT distinct left(address, 4) from info;");?>
+$resultloc = $conn->query("SELECT distinct trim(left(address, 4)) from info order by 1;");?>
 <head>
 <meta charset="UTF-8">
 
@@ -92,7 +92,6 @@ a:not([href]) {
 <div class = "prevnext"style = "width : 100%;text-align : left; margin-bottom: 15px;">
 <form action = "categorytest.php"method = "post">
     <select name="location" class="country">
-            <option value=""disabled selected>지역</option>
             <option value="">전체</option>
             <option value="강남구">강남구</option>
             <option value="강동구">강동구</option>
@@ -119,13 +118,19 @@ a:not([href]) {
             <option value="종로구">종로구</option>
             <option value="중구">중구</option>
             <option value="중랑구">중랑구</option>
+            <option value=""disabled selected>지역</option>
     </select>
     <select name="kind" class="sector" style = "margin-left : 4px;">
-        <option value=""disabled selected>업종</option>
         <option value="">전체</option>
-        <option value="중식">중식</option>
         <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
+        <option value="분식">분식</option>
         <option value="제과점">제과점</option>
+        <option value="도시락">도시락</option>
+        <option value="기타">기타</option>
+        <option value=""disabled selected>업종</option>
     </select>
     <input type = "submit" value = "검색"class = "catebtn">
 </form>
@@ -139,7 +144,6 @@ a:not([href]) {
 		<div class="mySlides fade">
 			<?php
 			$cntcnt=0;
-			echo "<script>console.log('$cntcnt');</script>";
 
 			if (mysqli_num_rows($result)  > 0) {
                 $cnt = 1;
@@ -155,7 +159,6 @@ a:not([href]) {
                         echo"</div>";
                     }
                     $cnt++; $cntcnt+=1;
-                    echo "<script>console.log('$cntcnt');</script>";
                     if($cntcnt==6){
                         $cntcnt=0;?>
 
@@ -170,7 +173,7 @@ a:not([href]) {
                 echo "아직 조사중입니다! 조금만 기다려주세요!<br>";
                 echo "현재 검색 가능한 지역 : ";
                 while($row = $resultloc->fetch_assoc()) {
-                echo $row['left(address, 4)'];
+                echo $row['trim(left(address, 4))'], " ";
                 }
             }
             ?>

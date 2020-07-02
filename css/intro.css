@@ -1,0 +1,39 @@
+.intro img {
+    width: 100%;
+}
+
+.intro button {
+    width: 30%;
+    margin: auto 1.6%;
+}
+
+.introbtn1 {
+    background-image: url('../img/hoppydream1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.introbtn2 {
+    background-image: url('../img/card1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.introbtn3 {
+    background-image: url('../img/howto1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.strong {
+    font-weight: border;
+}
+
+.intro {
+    margin-top: 5%;
+    background-image: url('../img/bgbg.png');
+    width: 80%;
+    margin: 5% auto 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
