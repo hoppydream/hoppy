@@ -41,34 +41,34 @@
 #intro {
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .introbg {
     margin: 0;
     width: 95vw;
     height: auto;
-    margin-top: 5%;
     position: relative;
 }
 
 .hoppydream1 {
-    z-index: 7;
+    z-index: 9;
     position: absolute;
-    width: 19vw;
+    width: 18vw;
     height: auto;
     /* top: 122vh; */
-    bottom: 8%;
-    left: 15vw;
-    filter: drop-shadow(5px 5px 5px #C4C4C4)
+    bottom: 6%;
+    left: 16.2vw;
+    filter: drop-shadow(5px 5px 5px #C4C4C4);
 }
 
 .card1 {
-    z-index: 8;
+    z-index: 9;
     position: absolute;
-    width: 19vw;
+    width: 18vw;
     height: auto;
     /* top: 122vh; */
-    bottom: 8%;
+    bottom: 6%;
     left: 40vw;
     filter: drop-shadow(5px 5px 5px #C4C4C4)
 }
@@ -76,10 +76,10 @@
 .howto1 {
     z-index: 9;
     position: absolute;
-    width: 19vw;
+    width: 18vw;
     height: auto;
     /* top: 122vh; */
-    bottom: 8%;
-    right: 15vw;
-    filter: drop-shadow(5px 5px 5px #C4C4C4)
+    bottom: 6%;
+    right: 16.2vw;
+    filter: drop-shadow(5px 5px 5px #C4C4C4);
 }

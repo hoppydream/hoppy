@@ -30,6 +30,8 @@ $result = mysqli_query($conn,$sql);?>
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- JS, Popper.js, and jQuery -->
+    
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -44,6 +46,37 @@ $result = mysqli_query($conn,$sql);?>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/intro.css">
+<style>
+    .flip-card {
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .flip-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+
+    .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    }
+
+    .flip-card-back {
+    background-color: dodgerblue;
+    transform: rotateY(180deg);
+    }
+</style>
+
 </head>
 
 <body style="text-align : center;">
@@ -62,16 +95,62 @@ $result = mysqli_query($conn,$sql);?>
     <br />
 
     <div class="intro" id="intro">
-    <img src="img/introbg.png" class="introbg" alt="introbg">
+    <img src="img/bgbgbg.png" class="introbg" alt="introbg">
 
-    <img src="img/hoppydream1.png" class="hoppydream1" alt="hoppydream1">
-    <img src="img/card1.png" class="card1" alt="card1">
-    <img src="img/howto1.png" class="howto1" alt="howto1">
-    <!--<button class = "col-lg-3 introbtn1"></button>
-        <button class = "col-lg-3 introbtn2"></button>
-        <button class = "col-lg-3 introbtn3"></button> -->
+    
+    
+
+    <img src="img/hoppydream1.png" class="hoppydream1 front" alt="hoppydream1">
+    <img src="img/card1.png" class="card1 front" alt="card1">
+    <img src="img/howto1.png" class="howto1 front" alt="howto1">
+    <script>
+        $(".hoppydream1").click(function(event) { 
+            if( $(".hoppydream1").attr("src")=="img/hoppydream1.png"){
+                $(".hoppydream1") .fadeOut('fast', function () {
+                    $(".hoppydream1").attr('src', 'img/hoppydream2.png');
+                    $(".hoppydream1").fadeIn('fast');
+                });
+            }
+            
+            else if( $(".hoppydream1").attr("src")=="img/hoppydream2.png"){
+                $(".hoppydream1") .fadeOut('fast', function () {
+                    $(".hoppydream1").attr('src', 'img/hoppydream1.png');
+                    $(".hoppydream1").fadeIn('fast');
+                });
+            }
+        });
+        
+        $(".card1").click(function(event) { 
+            if( $(".card1").attr("src")=="img/card1.png"){
+                $(".card1") .fadeOut('fast', function () {
+                    $(".card1").attr('src', 'img/card2.png');
+                    $(".card1").fadeIn('fast');
+                });
+            }
+            else if( $(".card1").attr("src")=="img/card2.png"){
+                $(".card1") .fadeOut('fast', function () {
+                    $(".card1").attr('src', 'img/card1.png');
+                    $(".card1").fadeIn('fast');
+                });
+            }
+        });
+        $(".howto1").click(function(event) { 
+            if( $(".howto1").attr("src")=="img/howto1.png"){
+                $(".howto1") .fadeOut('fast', function () {
+                    $(".howto1").attr('src', 'img/howto2.png');
+                    $(".howto1").fadeIn('fast');
+                });
+                
+            }
+            else if( $(".howto1").attr("src")=="img/howto2.png"){
+                $(".howto1") .fadeOut('fast', function () {
+                    $(".howto1").attr('src', 'img/howto1.png');
+                    $(".howto1").fadeIn('fast');
+                });
+            }
+        });
+    </script>
     </div>
-
     <div class="map" id="map1"><br><br><br><br>
         <div class="maintitle">현황</div>
         <div class="subtitle">주변에 있는 가맹점 위치를 지도에서 확인해보세요!</div>
@@ -133,6 +212,8 @@ function calcHeight(){
 //
 </script>
     <script src="scroll.js"></script>
+    
+
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 </body>

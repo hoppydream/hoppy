@@ -74,7 +74,7 @@ $result = mysqli_query($conn,$sql);
 <div class="slideshow-container">
 
 <div class="mySlides fade" style="text-align: center;">
-    <div class="col-lg-3 col-md-4 boardform">
+    <div class="col-lg-3 col-md-4 boardform"style = "vertical-align : bottom;">
 
         <span class="revtit">여러분의 솔직한 후기를 들려주세요!</span><br>
         <form action="board_write.php" method="post"enctype='multipart/form-data'>
@@ -128,7 +128,7 @@ $result = mysqli_query($conn,$sql);
     $cntcnt=0;
         if(mysqli_num_rows($result)>0){
             while($row=mysqli_fetch_array($result)){ ?>
-                <div class="board col-lg-3 col-md-4">
+                <div class="board col-lg-3 col-md-4"style = "vertical-align : bottom;">
                     <table>
                         <tr>
                             <td rowspan="3" class="reviewimg"><img
@@ -172,7 +172,7 @@ $result = mysqli_query($conn,$sql);
                 if($cntcnt==5){?>
                     </div>
                     <div class="mySlides fade"style="text-align: center;">
-                        <div class="col-lg-3 col-md-4 boardform">
+                        <div class="col-lg-3 col-md-4 boardform"style = "vertical-align : bottom;">
 
                             <span class="revtit">여러분의 솔직한 후기를 들려주세요!</span><br>
                             <form action="board_write.php" method="post"enctype="multipart/form-data" >
@@ -293,5 +293,14 @@ function showSlides(n) {
             document.getElementById("score").value = length;
             return false;
         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            var height = $(".boardform").css("height");
+            $(".board").css("height", height);
+            $(".boardform").css("height", height);
+            
+        });
+        
     </script>
 

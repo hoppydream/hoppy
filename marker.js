@@ -514,7 +514,8 @@ var positions = [{
     {
         title: '마실중(ing)',
         latlng: new kakao.maps.LatLng(37.5817120, 126.935652)
-    } {
+    },
+    {
         title: '만다린',
         latlng: new kakao.maps.LatLng(37.4860371, 126.938867)
     },
@@ -903,10 +904,6 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6437484, 127.037720)
     },
     {
-        title: '',
-        latlng: new kakao.maps.LatLng(, )
-    },
-    {
         title: '성호각',
         latlng: new kakao.maps.LatLng(37.5755760, 126.935046)
     },
@@ -1189,13 +1186,725 @@ var positions = [{
     {
         title: '일락',
         latlng: new kakao.maps.LatLng(37.6510333, 127.013338)
+    },
+    {
+        title: '자금성',
+        latlng: new kakao.maps.LatLng(37.4713297, 126.919278)
+    },
+    {
+        title: '자연고시식당',
+        latlng: new kakao.maps.LatLng(37.4705210, 126.937366)
+    },
+    {
+        title: '자연맛집',
+        latlng: new kakao.maps.LatLng(37.6563708, 127.038712)
+    },
+    {
+        title: '장강',
+        latlng: new kakao.maps.LatLng(37.6664077, 127.038570)
+    },
+    {
+        title: '장독대',
+        latlng: new kakao.maps.LatLng(37.5320717, 126.902953)
+    },
+    {
+        title: '장우연의 라이스볼 중곡점',
+        latlng: new kakao.maps.LatLng(37.5591164, 127.092446)
+    },
+    {
+        title: '잼파파',
+        latlng: new kakao.maps.LatLng(37.6403636, 127.026581)
+    },
+    {
+        title: '전설의옛날통닭',
+        latlng: new kakao.maps.LatLng(37.4995874, 126.910086)
+    },
+    {
+        title: '젊음의 광장',
+        latlng: new kakao.maps.LatLng(37.4562995, 126.905392)
+    },
+    {
+        title: '정성달아',
+        latlng: new kakao.maps.LatLng(37.5334731, 127.005433)
+    },
+    {
+        title: '정성한줄',
+        latlng: new kakao.maps.LatLng(37.4772287, 127.127382)
+    },
+    {
+        title: '제인버거',
+        latlng: new kakao.maps.LatLng(37.5557818, 126.909124)
+    },
+    {
+        title: '종로김밥',
+        latlng: new kakao.maps.LatLng(37.6561756, 127.027697)
+    },
+    {
+        title: '종로김밥',
+        latlng: new kakao.maps.LatLng(37.6619228, 127.032017)
+    },
+    {
+        title: '주래등',
+        latlng: new kakao.maps.LatLng(37.4854749, 126.979301)
+    },
+    {
+        title: '주식회사 트리플제이앤파트너스',
+        latlng: new kakao.maps.LatLng(37.5889464, 127.015536)
+    },
+    {
+        title: '주식회사 파리바게뜨 경복궁',
+        latlng: new kakao.maps.LatLng(37.5766001, 126.972210)
+    },
+    {
+        title: '주재근베이커리',
+        latlng: new kakao.maps.LatLng(37.5881501, 126.945304)
+    },
+    {
+        title: '중국관',
+        latlng: new kakao.maps.LatLng(37.6645699, 127.037923)
+    },
+    {
+        title: '중국성',
+        latlng: new kakao.maps.LatLng(37.5815065, 126.910926)
+    },
+    {
+        title: '중국성',
+        latlng: new kakao.maps.LatLng(37.5493679, 126.958437)
+    },
+    {
+        title: '중천',
+        latlng: new kakao.maps.LatLng(37.5513922, 127.021798)
+    },
+    {
+        title: '중화랑',
+        latlng: new kakao.maps.LatLng(37.5786094, 127.072692)
+    },
+    {
+        title: '중화명가',
+        latlng: new kakao.maps.LatLng(37.6553252, 127.040185)
+    },
+    {
+        title: '중화명가',
+        latlng: new kakao.maps.LatLng(37.6567855, 127.037862)
+    },
+    {
+        title: '중화요리 하이난',
+        latlng: new kakao.maps.LatLng(37.5988525, 127.075927)
+    },
+    {
+        title: '지도리치킨',
+        latlng: new kakao.maps.LatLng(37.5322550, 127.141334)
+    },
+    {
+        title: '지지고 명지대점',
+        latlng: new kakao.maps.LatLng(37.5813543, 126.925067)
+    },
+    {
+        title: '진미기사식당',
+        latlng: new kakao.maps.LatLng(37.6474111, 127.016057)
+    },
+    {
+        title: '짜우반점(구.명보성)',
+        latlng: new kakao.maps.LatLng(37.5795879, 126.924468)
+    },
+    {
+        title: '짬뽕1979',
+        latlng: new kakao.maps.LatLng(37.6626792, 127.033241)
+    },
+    {
+        title: '차이나',
+        latlng: new kakao.maps.LatLng(37.5898594, 127.078013)
+    },
+    {
+        title: '차이나',
+        latlng: new kakao.maps.LatLng(37.5847143, 126.924089)
+    },
+    {
+        title: '차이니s',
+        latlng: new kakao.maps.LatLng(37.6452080, 127.037664)
+    },
+    {
+        title: '착한식당',
+        latlng: new kakao.maps.LatLng(37.6857212, 127.048035)
+    },
+    {
+        title: '채움김밥',
+        latlng: new kakao.maps.LatLng(37.6637296, 127.045063)
+    },
+    {
+        title: '천냥김밥',
+        latlng: new kakao.maps.LatLng(37.5941868, 126.945639)
+    },
+    {
+        title: '천안문',
+        latlng: new kakao.maps.LatLng(37.6457518, 127.053142)
+    },
+    {
+        title: '청송식당',
+        latlng: new kakao.maps.LatLng(37.6629453, 127.046162)
+    },
+    {
+        title: '첸의 하우스',
+        latlng: new kakao.maps.LatLng(37.5350397, 126.847442)
+    },
+    {
+        title: '최고성',
+        latlng: new kakao.maps.LatLng(37.6594089, 127.032571)
+    },
+    {
+        title: '춘향골남원추어탕',
+        latlng: new kakao.maps.LatLng(37.5809738, 126.936637)
+    },
+    {
+        title: '치파오',
+        latlng: new kakao.maps.LatLng(37.6667873, 127.034841)
+    },
+    {
+        title: '칭따오',
+        latlng: new kakao.maps.LatLng(37.5889249, 126.945213)
+    },
+    {
+        title: '카페 402(cafe 402)',
+        latlng: new kakao.maps.LatLng(37.4873246, 126.888980)
+    },
+    {
+        title: '카페 이에나파이',
+        latlng: new kakao.maps.LatLng(37.5217366, 127.037638)
+    },
+    {
+        title: '쿡1015 내발산점',
+        latlng: new kakao.maps.LatLng(37.5524809, 126.826594)
+    },
+    {
+        title: '쿡1015강일점',
+        latlng: new kakao.maps.LatLng(37.5656389, 127.173779)
+    },
+    {
+        title: '큰맘할매순대국',
+        latlng: new kakao.maps.LatLng(37.6625173, 127.032516)
+    },
+    {
+        title: '큰집닭강정수택점',
+        latlng: new kakao.maps.LatLng(37.6670912, 127.078387)
+    },
+    {
+        title: '킴스그릴',
+        latlng: new kakao.maps.LatLng(37.4823233, 126.996476)
+    },
+    {
+        title: '태원',
+        latlng: new kakao.maps.LatLng(37.5084051, 126.932017)
+    },
+    {
+        title: '태풍',
+        latlng: new kakao.maps.LatLng(37.6385500, 127.036834)
+    },
+    {
+        title: '태화루',
+        latlng: new kakao.maps.LatLng(37.5737695, 126.813674)
+    },
+    {
+        title: '태화루',
+        latlng: new kakao.maps.LatLng(37.6019894, 127.087085)
+    },
+    {
+        title: '태화루서울쟁반짜장',
+        latlng: new kakao.maps.LatLng(37.4903679, 126.896529)
+    },
+    {
+        title: '테리맘스키친',
+        latlng: new kakao.maps.LatLng(37.5922211, 126.942425)
+    },
+    {
+        title: '텐쿡',
+        latlng: new kakao.maps.LatLng(37.4871256, 127.008834)
+    },
+    {
+        title: '토마토김밥',
+        latlng: new kakao.maps.LatLng(37.4738219, 126.966586)
+    },
+    {
+        title: '토마토김밥 고척사거리',
+        latlng: new kakao.maps.LatLng(37.5066371, 126.859263)
+    },
+    {
+        title: '토스트를 굽는사람들',
+        latlng: new kakao.maps.LatLng(37.5934745, 126.944552)
+    },
+    {
+        title: '통통김치찌개',
+        latlng: new kakao.maps.LatLng(37.5309319, 127.123897)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6580229, 127.026190)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6678325, 127.034570)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6659559, 127.042593)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6530977, 127.046144)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6840193, 127.045709)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6341158, 127.041295)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6399187, 127.039531)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6441390, 127.053289)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6498240, 127.026063)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6550247, 127.013304)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6583268, 127.035699)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6594151, 127.041751)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6625532, 127.032799)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6664504, 127.045574)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6562803, 127.040140)
+    },
+    {
+        title: '파리바게뜨',
+        latlng: new kakao.maps.LatLng(37.6463077, 127.035931)
+    },
+    {
+        title: '파리바게뜨 가재울뉴타운점',
+        latlng: new kakao.maps.LatLng(37.5759599, 126.915642)
+    },
+    {
+        title: '파리바게뜨 가재울래미안점',
+        latlng: new kakao.maps.LatLng(37.5778749, 126.910217)
+    },
+    {
+        title: '파리바게뜨 강남포이점',
+        latlng: new kakao.maps.LatLng(37.4786301, 127.045554)
+    },
+    {
+        title: '파리바게뜨 구로궁동점',
+        latlng: new kakao.maps.LatLng(37.4965332, 126.829360)
+    },
+    {
+        title: '파리바게뜨 금천법원단지점',
+        latlng: new kakao.maps.LatLng(37.4594705, 126.904744)
+    },
+    {
+        title: '파리바게뜨 대림역점',
+        latlng: new kakao.maps.LatLng(37.4942530, 126.898559)
+    },
+    {
+        title: '파리바게뜨 등촌그랜드점',
+        latlng: new kakao.maps.LatLng(37.5608064, 126.846121)
+    },
+    {
+        title: '파리바게뜨 명일역점',
+        latlng: new kakao.maps.LatLng(37.5515778, 127.144256)
+    },
+    {
+        title: '파리바게뜨 명지대점',
+        latlng: new kakao.maps.LatLng(37.5775870, 126.923293)
+    },
+    {
+        title: '파리바게뜨 송파센뜨레빌점',
+        latlng: new kakao.maps.LatLng(37.5011693, 127.108061)
+    },
+    {
+        title: '파리바게뜨 신금호역점',
+        latlng: new kakao.maps.LatLng(37.5541406, 127.019388)
+    },
+    {
+        title: '파리바게뜨 신내제일점',
+        latlng: new kakao.maps.LatLng(37.6055411, 127.096443)
+    },
+    {
+        title: '파리바게뜨 신내중앙점',
+        latlng: new kakao.maps.LatLng(37.6064614, 127.094904)
+    },
+    {
+        title: '파리바게뜨 신이문역점',
+        latlng: new kakao.maps.LatLng(37.6031288, 127.066544)
+    },
+    {
+        title: '파리바게뜨 신촌현대점',
+        latlng: new kakao.maps.LatLng(37.5568792, 126.932946)
+    },
+    {
+        title: '파리바게뜨 쌍문사거리점',
+        latlng: new kakao.maps.LatLng(37.6516775, 127.036103)
+    },
+    {
+        title: '파리바게뜨 쌍문역점',
+        latlng: new kakao.maps.LatLng(37.6479931, 127.033971)
+    },
+    {
+        title: '파리바게뜨 안암역점',
+        latlng: new kakao.maps.LatLng(37.5857994, 127.029484)
+    },
+    {
+        title: '파리바게뜨 암사브라운스톤점',
+        latlng: new kakao.maps.LatLng(37.5487031, 127.129030)
+    },
+    {
+        title: '파리바게뜨 역삼래미안',
+        latlng: new kakao.maps.LatLng(37.4985599, 127.046402)
+    },
+    {
+        title: '파리바게뜨 영등포대우',
+        latlng: new kakao.maps.LatLng(37.5133960, 126.905387)
+    },
+    {
+        title: '파리바게뜨 일원주공점',
+        latlng: new kakao.maps.LatLng(37.4917076, 127.087355)
+    },
+    {
+        title: '파리바게뜨 카페 황확롯데점',
+        latlng: new kakao.maps.LatLng(37.5709618, 127.021407)
+    },
+    {
+        title: '파리바게뜨 한성대역점',
+        latlng: new kakao.maps.LatLng(37.5892534, 127.007395)
+    },
+    {
+        title: '파리바게뜨 화곡대림점',
+        latlng: new kakao.maps.LatLng(37.5336296, 126.837341)
+    },
+    {
+        title: '파리바게뜨(서대문구청점)',
+        latlng: new kakao.maps.LatLng(37.5816219, 126.935538)
+    },
+    {
+        title: '파리바게뜨(용산후암점)',
+        latlng: new kakao.maps.LatLng(37.5500220, 126.977109)
+    },
+    {
+        title: '파리바게뜨(청구역점)',
+        latlng: new kakao.maps.LatLng(37.5584391, 127.013063)
+    },
+    {
+        title: '파리바게뜨(청구장충)',
+        latlng: new kakao.maps.LatLng(37.5607367, 127.012961)
+    },
+    {
+        title: '파리바게뜨(청와대점)',
+        latlng: new kakao.maps.LatLng(37.5835462, 126.970067)
+    },
+    {
+        title: '파리바게뜨개봉점',
+        latlng: new kakao.maps.LatLng(37.4913517, 126.855650)
+    },
+    {
+        title: '파리바게뜨서남병원점',
+        latlng: new kakao.maps.LatLng(37.5125009, 126.830782)
+    },
+    {
+        title: '파리바게뜨신풍역점',
+        latlng: new kakao.maps.LatLng(37.4990814, 126.908187)
+    },
+    {
+        title: '파리바게뜨중계무지개점',
+        latlng: new kakao.maps.LatLng(37.6427089, 127.066544)
+    },
+    {
+        title: '파리바게뜨화곡역점',
+        latlng: new kakao.maps.LatLng(37.5418311, 126.839111)
+    },
+    {
+        title: '파리바게트',
+        latlng: new kakao.maps.LatLng(37.5923765, 126.947067)
+    },
+    {
+        title: '파리바게트',
+        latlng: new kakao.maps.LatLng(37.5852232, 126.948250)
+    },
+    {
+        title: '파리바게트',
+        latlng: new kakao.maps.LatLng(37.6729560, 127.043810)
+    },
+    {
+        title: '파리바게트 가좌중앙점',
+        latlng: new kakao.maps.LatLng(37.5822286, 126.912759)
+    },
+    {
+        title: '파리바게트 홍은벽산점',
+        latlng: new kakao.maps.LatLng(37.5941239, 126.946047)
+    },
+    {
+        title: '파리바게트 홍은점',
+        latlng: new kakao.maps.LatLng(37.5995491, 126.948704)
+    },
+    {
+        title: '파리바게트(서대문행복점)',
+        latlng: new kakao.maps.LatLng(37.5644437, 126.965027)
+    },
+    {
+        title: '파리바게트(연희대우점)',
+        latlng: new kakao.maps.LatLng(37.5624714, 126.928006)
+    },
+    {
+        title: '파리바게트(연희안산점)',
+        latlng: new kakao.maps.LatLng(37.5746573, 126.935612)
+    },
+    {
+        title: '파리바게트(홍제역점)',
+        latlng: new kakao.maps.LatLng(37.5893923, 126.942993)
+    },
+    {
+        title: '파리바게트홍제인왕점',
+        latlng: new kakao.maps.LatLng(37.5892763, 126.945382)
+    },
+    {
+        title: '파티세리 소나',
+        latlng: new kakao.maps.LatLng(37.5244632, 126.855473)
+    },
+    {
+        title: '팔미원',
+        latlng: new kakao.maps.LatLng(37.5377181, 127.146221)
+    },
+    {
+        title: '포마토김밥',
+        latlng: new kakao.maps.LatLng(37.5885647, 126.945779)
+    },
+    {
+        title: '피자리아 시오',
+        latlng: new kakao.maps.LatLng(37.4996177, 127.058911)
+    },
+    {
+        title: '피자마루(피엠푸드 냉천점)',
+        latlng: new kakao.maps.LatLng(37.5668581, 126.963996)
+    },
+    {
+        title: '피자스쿨',
+        latlng: new kakao.maps.LatLng(37.5808230, 126.925531)
+    },
+    {
+        title: '피자스쿨 군자역점',
+        latlng: new kakao.maps.LatLng(37.5573216, 127.082518)
+    },
+    {
+        title: '피자스쿨 망우우림시장점',
+        latlng: new kakao.maps.LatLng(37.5957271, 127.099273)
+    },
+    {
+        title: '피자애(개봉점)',
+        latlng: new kakao.maps.LatLng(37.4915316, 126.855424)
+    },
+    {
+        title: '피자애(발산점)',
+        latlng: new kakao.maps.LatLng(37.5530093, 126.830554)
+    },
+    {
+        title: '하모니',
+        latlng: new kakao.maps.LatLng(37.5906570, 126.906477)
+    },
+    {
+        title: '한강반점',
+        latlng: new kakao.maps.LatLng(37.6695064, 127.040725)
+    },
+    {
+        title: '한성짜장',
+        latlng: new kakao.maps.LatLng(37.6437484, 127.037720)
+    },
+    {
+        title: '한솥',
+        latlng: new kakao.maps.LatLng(37.5457777, 127.085742)
+    },
+    {
+        title: '한솥 응암점',
+        latlng: new kakao.maps.LatLng(37.5947200, 126.917817)
+    },
+    {
+        title: '한솥(동대문점)',
+        latlng: new kakao.maps.LatLng(37.5724680, 127.007710)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.6704864, 127.046551)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.6291906, 127.055963)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.5643802, 126.963544)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.5546660, 126.910947)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.4792158, 126.957335)
+    },
+    {
+        title: '한솥도시락',
+        latlng: new kakao.maps.LatLng(37.4693228, 126.937593)
+    },
+    {
+        title: '한솥도시락 구파발역점',
+        latlng: new kakao.maps.LatLng(37.6441005, 126.914578)
+    },
+    {
+        title: '한솥도시락 논현초등학교옆점',
+        latlng: new kakao.maps.LatLng(37.5069092, 127.026016)
+    },
+    {
+        title: '한솥도시락 상수역점',
+        latlng: new kakao.maps.LatLng(37.5475744, 126.922453)
+    },
+    {
+        title: '한솥도시락 신림신성초교점',
+        latlng: new kakao.maps.LatLng(37.4711607, 126.937421)
+    },
+    {
+        title: '한솥도시락 휘경주공점',
+        latlng: new kakao.maps.LatLng(37.5798541, 127.070361)
+    },
+    {
+        title: '한솥도시락(서울특별시 마포구청점)',
+        latlng: new kakao.maps.LatLng(37.5624370, 126.905177)
+    },
+    {
+        title: '한스델리 홍제점 플러스',
+        latlng: new kakao.maps.LatLng(37.5870600, 126.945701)
+    },
+    {
+        title: '한스델리(신촌점)',
+        latlng: new kakao.maps.LatLng(37.5589288, 126.940946)
+    },
+    {
+        title: '한스델리플러스홍대점',
+        latlng: new kakao.maps.LatLng(37.5556124, 126.924165)
+    },
+    {
+        title: '함스브로트과자점',
+        latlng: new kakao.maps.LatLng(37.6489300, 127.034516)
+    },
+    {
+        title: '해등길 냉면',
+        latlng: new kakao.maps.LatLng(37.6560919, 127.037329)
+    },
+    {
+        title: '해촌샤브칼국수',
+        latlng: new kakao.maps.LatLng(37.5470058, 126.870649)
+    },
+    {
+        title: '행복반점',
+        latlng: new kakao.maps.LatLng(37.6253174, 126.917828)
+    },
+    {
+        title: '향원',
+        latlng: new kakao.maps.LatLng(37.6416675, 127.036507)
+    },
+    {
+        title: '협동조합 방아골사람들',
+        latlng: new kakao.maps.LatLng(37.6692564, 127.033142)
+    },
+    {
+        title: '호가호식',
+        latlng: new kakao.maps.LatLng(37.6467762, 127.036124)
+    },
+    {
+        title: '홀라닭강정',
+        latlng: new kakao.maps.LatLng(37.4878127, 126.911899)
+    },
+    {
+        title: '홍반장',
+        latlng: new kakao.maps.LatLng(37.6334046, 127.039539)
+    },
+    {
+        title: '홍수식당',
+        latlng: new kakao.maps.LatLng(37.6429043, 127.027228)
+    },
+    {
+        title: '홍은떡볶이',
+        latlng: new kakao.maps.LatLng(37.5811439, 126.934780)
+    },
+    {
+        title: '홍짜장',
+        latlng: new kakao.maps.LatLng(37.5384000, 127.141176)
+    },
+    {
+        title: '홍콩반점',
+        latlng: new kakao.maps.LatLng(37.6633640, 127.033083)
+    },
+    {
+        title: '화원',
+        latlng: new kakao.maps.LatLng(37.6420735, 127.034728)
+    },
+    {
+        title: '화원화이트 카멜레온',
+        latlng: new kakao.maps.LatLng(37.4702180, 126.902978)
+    },
+    {
+        title: '환타지아(파리바게뜨 가좌역점)',
+        latlng: new kakao.maps.LatLng(37.5694543, 126.915084)
+    },
+    {
+        title: '황금성',
+        latlng: new kakao.maps.LatLng(37.5716079, 127.057540)
+    },
+    {
+        title: '황성욱 빠띠시에',
+        latlng: new kakao.maps.LatLng(37.5810755, 126.925859)
+    },
+    {
+        title: '황제해물짬뽕',
+        latlng: new kakao.maps.LatLng(37.6708287, 127.046631)
+    },
+    {
+        title: '효동각',
+        latlng: new kakao.maps.LatLng(37.6463989, 127.032169)
+    },
+    {
+        title: '후루룩 냠냠',
+        latlng: new kakao.maps.LatLng(37.6267243, 127.017944)
+    },
+    {
+        title: '흑석동 명당김밥',
+        latlng: new kakao.maps.LatLng(37.5079691, 126.964150)
+    },
+    {
+        title: '흥부네집',
+        latlng: new kakao.maps.LatLng(37.6576322, 127.038543)
     }
 ];
 // 마커 이미지의 이미지 주소입니다
-var imageSrc = "https://cdn.pixabay.com/photo/2014/04/03/10/03/google-309741_960_720.png";
+var imageSrc = "img/markergreen.png";
 for (var i = 0; i < positions.length; i++) {
     // 마커 이미지의 이미지 크기 입니다
-    var imageSize = new kakao.maps.Size(24, 35);
+    var imageSize = new kakao.maps.Size(40, 40);
     // 마커 이미지를 생성합니다    
     var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
     // 마커를 생성합니다
