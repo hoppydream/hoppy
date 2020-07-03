@@ -47,6 +47,8 @@
     margin: 0;
     width: 95vw;
     height: auto;
+    margin-top: 5%;
+    position: relative;
 }
 
 .hoppydream1 {
@@ -54,7 +56,8 @@
     position: absolute;
     width: 19vw;
     height: auto;
-    top: 122vh;
+    /* top: 122vh; */
+    bottom: 8%;
     left: 15vw;
     filter: drop-shadow(5px 5px 5px #C4C4C4)
 }
@@ -64,7 +67,8 @@
     position: absolute;
     width: 19vw;
     height: auto;
-    top: 122vh;
+    /* top: 122vh; */
+    bottom: 8%;
     left: 40vw;
     filter: drop-shadow(5px 5px 5px #C4C4C4)
 }
@@ -74,7 +78,8 @@
     position: absolute;
     width: 19vw;
     height: auto;
-    top: 122vh;
+    /* top: 122vh; */
+    bottom: 8%;
     right: 15vw;
     filter: drop-shadow(5px 5px 5px #C4C4C4)
 }
