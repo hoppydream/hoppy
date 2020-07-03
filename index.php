@@ -62,11 +62,14 @@ $result = mysqli_query($conn,$sql);?>
     <br />
 
     <div class="intro" id="intro">
-        
-        <button class = "col-lg-3 introbtn1"></button>
+    <img src="img/introbg.png" class="introbg" alt="introbg">
+
+    <img src="img/hoppydream1.png" class="hoppydream1" alt="hoppydream1">
+    <img src="img/card1.png" class="card1" alt="card1">
+    <img src="img/howto1.png" class="howto1" alt="howto1">
+    <!--<button class = "col-lg-3 introbtn1"></button>
         <button class = "col-lg-3 introbtn2"></button>
-        <button class = "col-lg-3 introbtn3"></button>
-        
+        <button class = "col-lg-3 introbtn3"></button> -->
     </div>
 
     <div class="map" id="map1"><br><br><br><br>
@@ -75,7 +78,7 @@ $result = mysqli_query($conn,$sql);?>
         <!-- <iframe src="//cyranoch.cafe24.com/piree/p770033/map_ka.php?bo_table=map" width="80%" height="75%"
             class="mapframe" id="map-canvas"></iframe> -->
             <div class="mapp" id="mapp">
-            <div id="map" style="width:100%;height:70%;"></div> <!-- 다른 이미지로 마커 생성하기 -->
+            <div id="map" style="width:100%; height:70%;"></div> <!-- 다른 이미지로 마커 생성하기 -->
             
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e38c15b1993e4d2bd6c705b65a34c6fd"></script>
             <script type="text/javascript" src="marker.js"></script>
