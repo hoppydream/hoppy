@@ -37,7 +37,7 @@ html {
 
 
 #cc {
-    color: #deb34e;
+    color: #9cc255;
 }
 
 .menubtn {
@@ -169,7 +169,7 @@ tr {}
 
 /*-------------------------------------------*/
 .board {
-    border: 3px solid #deb34f;
+    border: 3px solid #9cc255;
     display: inline-block;
     border-radius: 30px;
     padding: 2vw;
@@ -179,7 +179,7 @@ tr {}
 }
 
 .boardform {
-    border: 3px solid #6e9758;
+    border: 3px solid #9cc255;
     display: inline-block;
     border-radius: 30px;
     padding: 2vw;
