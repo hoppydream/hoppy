@@ -154,10 +154,8 @@ $result = mysqli_query($conn,$sql);?>
     <div class="map" id="map1"><br><br><br><br>
         <div class="maintitle">현황</div>
         <div class="subtitle">주변에 있는 가맹점 위치를 지도에서 확인해보세요!</div>
-        <!-- <iframe src="//cyranoch.cafe24.com/piree/p770033/map_ka.php?bo_table=map" width="80%" height="75%"
-            class="mapframe" id="map-canvas"></iframe> -->
             <div class="mapp" id="mapp">
-            <div id="map" style="width:100%; height:70%;"></div> <!-- 다른 이미지로 마커 생성하기 -->
+            <div id="map" style="width:90%; height:75%; margin: auto;"></div>
             
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e38c15b1993e4d2bd6c705b65a34c6fd"></script>
             <script type="text/javascript" src="marker.js"></script>
