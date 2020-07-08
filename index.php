@@ -155,7 +155,7 @@ $result = mysqli_query($conn,$sql);?>
         <div class="maintitle">현황</div>
         <div class="subtitle">주변에 있는 가맹점 위치를 지도에서 확인해보세요!</div>
             <div class="mapp" id="mapp">
-            <div id="map" style="width:90%; height:75%; margin: auto;"></div>
+            <div id="map" style="width:80%; height:70%; margin: auto;"></div>
             
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e38c15b1993e4d2bd6c705b65a34c6fd"></script>
             <script type="text/javascript" src="marker.js"></script>
