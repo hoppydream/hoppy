@@ -56,7 +56,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 
 // 마커를 표시할 위치와 title 객체 배열입니다 
 var positions = [{
-        title: '(주) 안동장',
+        title: '안동장',
         latlng: new kakao.maps.LatLng(37.5082653, 126.960858)
     },
     {
@@ -64,7 +64,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6425319, 127.038241)
     },
     {
-        title: '5빠 떡볶이',
+        title: '5빠떡볶이',
         latlng: new kakao.maps.LatLng(37.5492922, 126.977381)
     },
     {
@@ -72,7 +72,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5402891, 126.838187)
     },
     {
-        title: 'GS25신정행복점(행복)',
+        title: 'GS25 신정행복점',
         latlng: new kakao.maps.LatLng(37.5261130, 126.856250)
     },
     {
@@ -108,7 +108,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5537505, 126.929225)
     },
     {
-        title: '공릉동멸치국수',
+        title: '공릉동 멸치국수',
         latlng: new kakao.maps.LatLng(37.6696685, 127.040793)
     },
     {
@@ -116,7 +116,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6473173, 127.034379)
     },
     {
-        title: '구르메식탁(호랑이식탁)',
+        title: '구르메식탁',
         latlng: new kakao.maps.LatLng(37.5817778, 126.925213)
     },
     {
@@ -124,7 +124,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.4988126, 127.146620)
     },
     {
-        title: '국물명가24시전주콩나물국밥',
+        title: '국물명가 24시전주콩나물국밥',
         latlng: new kakao.maps.LatLng(37.6582824, 127.074072)
     },
     {
@@ -160,7 +160,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.633906, 127.040783)
     },
     {
-        title: '김가네국수집',
+        title: '김가네 국수집',
         latlng: new kakao.maps.LatLng(37.472380, 126.935672)
     },
     {
@@ -180,7 +180,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.478939, 126.952814)
     },
     {
-        title: '푸드2900',
+        title: '푸드 2900',
         latlng: new kakao.maps.LatLng(37.486441, 126.939552)
     },
     {
@@ -472,11 +472,11 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6430278, 127.037153)
     },
     {
-        title: '뚜레쥬르(선유도역점)',
+        title: '뚜레쥬르 선유도역점',
         latlng: new kakao.maps.LatLng(37.5380919, 126.894369)
     },
     {
-        title: '뚜레쥬르(홍제역점)',
+        title: '뚜레쥬르 홍제역점',
         latlng: new kakao.maps.LatLng(37.5857724, 126.947343)
     },
     {
@@ -500,7 +500,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6657245, 127.033333)
     },
     {
-        title: '레스쁘아과자점',
+        title: '레스쁘아 과자점',
         latlng: new kakao.maps.LatLng(37.5886168, 127.076732)
     },
     {
@@ -680,19 +680,19 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6685261, 127.034819)
     },
     {
-        title: '본 설렁탕(송파오금점)',
+        title: '본 설렁탕 송파오금점 ',
         latlng: new kakao.maps.LatLng(37.5047016, 127.134293)
     },
     {
-        title: '본도시락 (광화문점)',
+        title: '본도시락 광화문점',
         latlng: new kakao.maps.LatLng(37.5737712, 126.972969)
     },
     {
-        title: '본도시락 (대학로점)',
+        title: '본도시락 대학로점',
         latlng: new kakao.maps.LatLng(37.5803518, 127.003986)
     },
     {
-        title: '본도시락 (신당점)',
+        title: '본도시락 신당점',
         latlng: new kakao.maps.LatLng(37.5668449, 127.017093)
     },
     {
@@ -720,23 +720,23 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5582399, 126.981905)
     },
     {
-        title: '본도시락(서대문점)',
+        title: '본도시락 서대문점',
         latlng: new kakao.maps.LatLng(37.5674980, 126.964607)
     },
     {
-        title: '본도시락(서소문점)',
+        title: '본도시락 서소문점',
         latlng: new kakao.maps.LatLng(37.5602721, 126.964826)
     },
     {
-        title: '본도시락(신촌점)',
+        title: '본도시락 신촌점',
         latlng: new kakao.maps.LatLng(7.5586216, 126.939271)
     },
     {
-        title: '본도시락(이대점)',
+        title: '본도시락 이대점',
         latlng: new kakao.maps.LatLng(37.5582551, 126.944941)
     },
     {
-        title: '본도시락(한남점)',
+        title: '본도시락 한남점',
         latlng: new kakao.maps.LatLng(37.5302835, 127.007718)
     },
     {
@@ -744,15 +744,15 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6055803, 126.910297)
     },
     {
-        title: '본죽(인왕산점)',
+        title: '본죽 인왕산점',
         latlng: new kakao.maps.LatLng(37.5857816, 126.947740)
     },
     {
-        title: '본죽(중곡점)',
+        title: '본죽 중곡점',
         latlng: new kakao.maps.LatLng(37.5653416, 127.080795)
     },
     {
-        title: '본죽(홍제점)',
+        title: '본죽 홍제점',
         latlng: new kakao.maps.LatLng(37.5870600, 126.945701)
     },
     {
@@ -936,7 +936,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.4927426, 127.075799)
     },
     {
-        title: '쉐프밥버거(한양여대점)',
+        title: '쉐프밥버거 한양여대점',
         latlng: new kakao.maps.LatLng(37.5611785, 127.047991)
     },
     {
@@ -1064,7 +1064,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5743487, 126.917840)
     },
     {
-        title: '오렌지김밥(홍제동)',
+        title: '홍제동 오렌지김밥',
         latlng: new kakao.maps.LatLng(37.5861868, 126.947309)
     },
     {
@@ -1176,7 +1176,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5472211, 126.933962)
     },
     {
-        title: '이엔바이(이n바이)',
+        title: '이엔바이',
         latlng: new kakao.maps.LatLng(37.6257321, 127.024662)
     },
     {
@@ -1304,7 +1304,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.6474111, 127.016057)
     },
     {
-        title: '짜우반점(구.명보성)',
+        title: '짜우반점 (구.명보성)',
         latlng: new kakao.maps.LatLng(37.5795879, 126.924468)
     },
     {
@@ -1364,7 +1364,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5889249, 126.945213)
     },
     {
-        title: '카페 402(cafe 402)',
+        title: '카페 402',
         latlng: new kakao.maps.LatLng(37.4873246, 126.888980)
     },
     {
@@ -1664,23 +1664,23 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5995491, 126.948704)
     },
     {
-        title: '파리바게트(서대문행복점)',
+        title: '파리바게트 서대문행복점',
         latlng: new kakao.maps.LatLng(37.5644437, 126.965027)
     },
     {
-        title: '파리바게트(연희대우점)',
+        title: '파리바게트 연희대우점',
         latlng: new kakao.maps.LatLng(37.5624714, 126.928006)
     },
     {
-        title: '파리바게트(연희안산점)',
+        title: '파리바게트 연희안산점',
         latlng: new kakao.maps.LatLng(37.5746573, 126.935612)
     },
     {
-        title: '파리바게트(홍제역점)',
+        title: '파리바게트 홍제역점',
         latlng: new kakao.maps.LatLng(37.5893923, 126.942993)
     },
     {
-        title: '파리바게트홍제인왕점',
+        title: '파리바게트 홍제인왕점',
         latlng: new kakao.maps.LatLng(37.5892763, 126.945382)
     },
     {
@@ -1700,7 +1700,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.4996177, 127.058911)
     },
     {
-        title: '피자마루(피엠푸드 냉천점)',
+        title: '피자마루 피엠푸드 냉천점',
         latlng: new kakao.maps.LatLng(37.5668581, 126.963996)
     },
     {
@@ -1716,11 +1716,11 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5957271, 127.099273)
     },
     {
-        title: '피자애(개봉점)',
+        title: '피자애 개봉점',
         latlng: new kakao.maps.LatLng(37.4915316, 126.855424)
     },
     {
-        title: '피자애(발산점)',
+        title: '피자애 발산점',
         latlng: new kakao.maps.LatLng(37.5530093, 126.830554)
     },
     {
@@ -1744,7 +1744,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.5947200, 126.917817)
     },
     {
-        title: '한솥(동대문점)',
+        title: '한솥 동대문점',
         latlng: new kakao.maps.LatLng(37.5724680, 127.007710)
     },
     {
@@ -1868,7 +1868,7 @@ var positions = [{
         latlng: new kakao.maps.LatLng(37.4702180, 126.902978)
     },
     {
-        title: '환타지아(파리바게뜨 가좌역점)',
+        title: '환타지아 파리바게뜨 가좌역점',
         latlng: new kakao.maps.LatLng(37.5694543, 126.915084)
     },
     {
