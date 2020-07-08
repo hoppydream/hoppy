@@ -26,7 +26,7 @@ if($get_kind==NULL){
 }
 $sql = "SELECT * FROM info WHERE address like('$get_location%%') and kind like('$get_kind%%')";
 $result = $conn->query($sql);
-$resultloc = $conn->query("SELECT distinct trim(left(address, 4)) from info order by 1;");?>
+$resultloc = $conn->query("SELECT distinct kind from info where address like('$get_location%%') order by 1;");?>
 <head>
 <meta charset="UTF-8">
 
@@ -171,9 +171,9 @@ a:not([href]) {
             else {
 
                 echo "아직 조사중입니다! 조금만 기다려주세요!<br>";
-                echo "현재 검색 가능한 지역 : ";
+                echo $get_location."에서 검색 가능한 업종 : ";
                 while($row = $resultloc->fetch_assoc()) {
-                echo $row['trim(left(address, 4))'], " ";
+                echo $row['kind'], " ";
                 }
             }
             ?>
